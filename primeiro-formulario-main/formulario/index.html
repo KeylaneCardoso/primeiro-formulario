@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css" media="screen">
+    <title>Cadastro de Livros</title>
+</head>
+
+<body>
+
+    <button id="botao-chat" onclick="chatbot()"> Fale com o Cat </button>
+    
+    <div id="tela-chat">
+        <p>Bom dia! Como posso ajudar?</p>
+        <input type="text" name="texto-chat">
+        <button type="submit">Enviar</button>
+    </div>
+
+
+    <section id="conteudo">
+        <div class="cabecalho">
+            <h2 id="sub-titulo">Bem-vindo a</h2>
+            <div id="logo">
+                <img src="image/bola-de-la.png" style="width: 100px;">
+                <h1 id="titulo" style="font-size: 80px;">BiblioCat</h1> <br>
+            </div>
+            <p id="descricao">Cadastre aqui seus livros favoritos!<br>Somos uma biblioteca online comunitaria,<br>compartilhe conosco seus livros favoritos!</p>
+            <img src="image/leitura.png" style="margin-top: 5%; width:60%">
+        </div>
+
+        <form class="formulario">
+
+            <h1>Insira os dados do Livro</h1>
+            <fieldset class="grupo">
+                <div class="campo">
+                    <label for="title"><strong>Titulo</strong></label><br>
+                    <input type="text" name="title" required>
+                </div>
+                <div class="campo">
+                    <label for="autor"><strong>Autor</strong></label><br>
+                    <input type="text" name="autor" required>
+                </div>
+            </fieldset>        
+            
+            <div class="campo">
+                <label for="genero"><strong>Gênero</strong></label>
+                <select id="genero" required>
+                    <option selected disabled value="">Selecione</option>
+                    <option>Fantasia</option>
+                    <option>Ficção</option>
+                    <option>Distopia</option>
+                    <option>Ação e aventura</option>
+                    <option>Romance</option>
+                    <option>Conto</option>
+                    <option>Autoajuda</option>
+                    <option>Religião e Espiritualidade</option>
+                    <option>Humor</option>
+                    <option>Infantil</option>
+                </select>
+            </div>
+            
+            <fieldset class="grupo">
+                <div id="check">
+                    <label><strong>Idiomas Disponíveis</strong></label><br>
+                    <input type="checkbox" id="idioma1" name="idioma1" value="Portugues">
+                    <label for="idioma1">Portugues</label>
+                    <input type="checkbox" id="idioma2" name="idioma2" value="Ingles">
+                    <label for="idioma2">Ingles</label>
+                    <input type="checkbox" id="idioma3" name="idioma3" value="Espanhol">
+                    <label for="idioma3">Espanhol</label><br>
+                    <input type="checkbox" id="idioma4" name="idioma4" value="Frances">
+                    <label for="idioma4">Frances</label> 
+                    <input type="checkbox" id="idioma5" name="idioma5" value="Japones">
+                    <label for="idioma5">Japones</label>
+                    <input type="checkbox" id="idioma6" name="idioma6" value="Alemao">
+                    <label for="idioma6">Alemao</label>
+                </div>
+            </fieldset>
+
+            <div class="campo">
+                <label for="descricao"><strong>Descrição da Obra</strong></label><br>
+                <textarea rows="6" style="width: 26em" id="experiencia" name="experiencia"></textarea>
+            </div>
+
+            <div class="campo">
+                <label for="capa"><strong>Capa da Obra</strong></label><br>
+                <input type="file" name="capa">
+            </div>
+
+            <div class="campo">
+                <label for="pdf"><strong>Pdf da Obra</strong></label><br>
+                <input type="file" name="pdf">
+            </div>
+
+            <div>
+                <button class="botao" type="submit" onsubmit="">Enviar</button>
+            </div>
+
+        </form>
+    </section>
+    
+    
+    
+
+
+</body>
+</html>
